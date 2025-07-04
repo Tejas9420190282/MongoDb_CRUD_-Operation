@@ -3,6 +3,7 @@
 
 const colors = require('colors');
 const express = require('express');
+const { connectDB } = require('./config/db');
 
 const app = express();
 
@@ -14,6 +15,7 @@ const PORT = 7878;
 
 const startServer = async () => {
 
+    await connectDB();
     
     app.listen(PORT, () => {
 
