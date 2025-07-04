@@ -32,3 +32,4 @@ const student = mongoose.model(`student`, student_Scema);
 
 exports.student = student;
 
+
