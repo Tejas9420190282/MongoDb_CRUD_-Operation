@@ -5,6 +5,7 @@ const colors = require('colors');
 const express = require('express');
 const { connectDB } = require('./config/db');
 const { Create_Student_Router } = require('./router/Create_Student_Router');
+const { React_All_Student_Router } = require('./router/React_All_Student_Router');
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(express.urlencoded({extended:true}));
 
 
 app.use(Create_Student_Router);
+
+app.use(React_All_Student_Router);
 
 
 
