@@ -4,7 +4,7 @@
 const { default: mongoose } = require("mongoose");
 
 const student_Scema = new mongoose.Schema({
-    id: Number, //  This will be auto-incremented
+   
     name : {
         type : String,
         required : [true, "Name is mandatory"]    //  The name field is mandatory, and if it is missing, Mongoose will throw a validation error with the custom message: "Name is required"
